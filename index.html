@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Nilakshi 💌</title>
+<meta name="description" content="Someone made this just for you. Open it 🙂">
+<meta property="og:title" content="For Nilakshi 💌">
+<meta property="og:description" content="Navdeep made this just for you. Open it 🙂">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ff4f8b">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE: tender, playful, a little cheeky — a love note, not a webpage
+   IDEA: a handwritten note + a kitchen "order ticket" for date #2
+   PICTURE: a smiling cooking pot puffing heart-shaped steam
+   COLOUR and TYPE: strawberry pink field, raspberry ink, butter-yellow accent; Fredoka + Caveat handwriting
+   LAYOUT: one card per moment, centred, phone-first */
+:root{color-scheme:light;--bg:#ffe1ea;--card:#fffafb;--ink:#4a1630;--soft:#8a4a66;--pink:#ff4f8b;--deep:#c2185b;--butter:#ffd166;--line:#ffc2d4}
+*{box-sizing:border-box;min-width:0}
+html,body{height:100%}
+body{margin:0;color:var(--ink);font:17px/1.5 Fredoka,system-ui,sans-serif;overflow-x:clip;
+  background:radial-gradient(circle at 15% 10%,#fff0f5 0,transparent 40%),radial-gradient(circle at 90% 85%,#ffc9da 0,transparent 45%),var(--bg);background-attachment:fixed}
+#bgHearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+#bgHearts span{position:absolute;bottom:-40px;color:var(--pink);animation:rise linear infinite}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+main{position:relative;z-index:1;min-height:100%;display:grid;place-items:center;padding:24px 16px 72px}
+.screen{display:none;width:100%;max-width:520px;animation:pop .45s cubic-bezier(.2,1.4,.4,1)}
+.screen.on{display:block}
+@keyframes pop{from{transform:scale(.92) translateY(12px);opacity:0}}
+.card{background:var(--card);border-radius:28px;padding:clamp(24px,6vw,40px);box-shadow:0 18px 50px -18px rgba(194,24,91,.45),0 2px 0 #fff inset;text-align:center;position:relative}
+.hand{font-family:Caveat,cursive;font-weight:700}
+h1{font-size:clamp(30px,8vw,44px);line-height:1.08;margin:6px 0 10px;text-wrap:balance;font-weight:700}
+h1 .name{font-family:Caveat,cursive;color:var(--deep);font-size:1.3em;display:inline-block}
+p{margin:0 0 12px;color:var(--soft)}
+.big-name{font-family:Caveat,cursive;font-size:clamp(56px,16vw,84px);line-height:1;color:var(--deep);margin:8px 0 4px}
+.seal{width:120px;height:120px;margin:4px auto 14px;display:block}
+.seal path{animation:beat 1.4s ease-in-out infinite;transform-origin:60px 60px}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.12)}30%{transform:scale(1)}45%{transform:scale(1.08)}}
+.pot{width:min(260px,70%);height:auto;display:block;margin:0 auto 4px;overflow:visible}
+.steam{animation:float 3s ease-in infinite;opacity:0}
+.steam.s2{animation-delay:1s}.steam.s3{animation-delay:2s}
+@keyframes float{0%{transform:translateY(0) scale(.6);opacity:0}20%{opacity:1}100%{transform:translateY(-70px) scale(1.1);opacity:0}}
+.couple{width:min(260px,78%);height:auto;display:block;margin:-6px auto 0;overflow:visible}
+.couple .beat{animation:beat 1.4s ease-in-out infinite;transform-origin:140px 34px}
+.couple-names{font-size:28px;color:var(--deep);line-height:1;margin:2px 0 10px}
+.couple-names span{color:var(--pink);font-size:.8em}
+.sorry{background:#fff1f5;border:2px solid var(--line);border-radius:18px;padding:12px 16px;margin:0 0 16px;font-family:Caveat,cursive;font-size:23px;line-height:1.25;color:var(--deep);text-align:left;font-weight:700}
+.note{font-family:Caveat,cursive;font-size:23px;color:var(--deep);line-height:1.25;margin:4px 0 18px}
+.btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;margin-top:8px;min-height:90px}
+button,.btn{font:600 18px/1.2 Fredoka,system-ui,sans-serif;border:0;border-radius:999px;padding:14px 28px;cursor:pointer;min-height:48px;transition:font-size .25s,padding .25s,transform .15s;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+button:focus-visible,.btn:focus-visible{outline:3px solid var(--butter);outline-offset:3px}
+button:active,.btn:active{transform:scale(.96)}
+.yes{background:linear-gradient(180deg,#ff6b9d,var(--pink));color:#fff;box-shadow:0 8px 0 var(--deep),0 14px 24px -8px rgba(194,24,91,.6)}
+.yes:active{box-shadow:0 3px 0 var(--deep)}
+.no{background:#fff;color:var(--deep);border:2px solid var(--line);max-width:100%;font-size:16px}
+.no.wiggle{animation:wiggle .4s}
+@keyframes wiggle{20%{transform:rotate(-6deg)}40%{transform:rotate(6deg)}60%{transform:rotate(-4deg)}80%{transform:rotate(3deg)}}
+.hint{font-size:14px;color:var(--soft);min-height:22px;margin:14px 0 0}
+.choices{display:grid;gap:14px;margin-top:16px}
+.choice{background:#fff;border:2px solid var(--line);border-radius:22px;padding:18px;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;text-align:left;align-items:center;color:var(--ink);font-weight:500}
+.choice:hover{border-color:var(--pink);background:#fff5f8}
+.choice .em{font-size:42px;grid-row:span 2;line-height:1}
+.choice b{font-size:20px;font-weight:700}
+.choice small{font-size:15px;color:var(--soft);font-weight:400}
+.ticket{background:#fff;border:2px dashed var(--line);border-radius:18px;padding:16px 18px;margin:18px 0;text-align:left;position:relative}
+.ticket h3{margin:0 0 8px;font-size:15px;color:var(--deep);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.ticket h3 span{background:var(--butter);color:var(--ink);border-radius:999px;padding:1px 10px;font-size:13px;white-space:nowrap}
+.row{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-top:1px dotted var(--line);font-size:15px}
+.row:first-of-type{border-top:0}
+.row span:first-child{color:var(--soft)}
+.row span:last-child{text-align:right;font-weight:600}
+.wa{background:#25d366;color:#fff;box-shadow:0 6px 0 #149c4a;width:100%;margin-top:4px}
+.link{background:none;color:var(--deep);font-size:15px;text-decoration:underline;padding:10px;min-height:44px;font-weight:500}
+footer{position:fixed;left:0;right:0;bottom:0;z-index:2;text-align:center;padding:10px 12px 14px;font-size:14px;color:var(--soft);background:linear-gradient(transparent,var(--bg) 45%)}
+footer .hand{font-size:20px;color:var(--deep)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.steam{opacity:1}}
+</style>
+</head>
+<body>
+<div id="bgHearts" aria-hidden="true"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<main>
+  <!-- 1. Envelope -->
+  <section class="screen on" id="s-open">
+    <div class="card">
+      <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="60" r="56" fill="#ffe1ea"/>
+        <circle cx="60" cy="60" r="44" fill="#fff" stroke="#ffc2d4" stroke-width="3" stroke-dasharray="6 6"/>
+        <path d="M60 86 C 30 66, 30 40, 47 38 C 54 37, 58 42, 60 46 C 62 42, 66 37, 73 38 C 90 40, 90 66, 60 86 Z" fill="#ff4f8b"/>
+        <ellipse cx="50" cy="48" rx="5" ry="3" fill="#fff" opacity=".7" transform="rotate(-30 50 48)"/>
+      </svg>
+      <p>Hey you 👋</p>
+      <div class="big-name">Nilakshi</div>
+      <p>Navdeep made this little thing just for you.<br>No one else in the world gets this one.</p>
+      <div class="btns"><button class="yes" id="openBtn">Open it 💌</button></div>
+    </div>
+  </section>
+
+  <!-- 2. The question -->
+  <section class="screen" id="s-ask">
+    <div class="card">
+      <svg class="pot" viewBox="0 0 260 210" aria-hidden="true">
+        <g fill="#ff4f8b">
+          <path class="steam s1" d="M95 70 c-10-8-10-18-3-19 c4-1 6 2 7 4 c1-2 3-5 7-4 c7 1 7 11-11 19z"/>
+          <path class="steam s2" d="M130 62 c-12-9-12-21-4-22 c5-1 7 2 8 5 c1-3 3-6 8-5 c8 1 8 13-12 22z"/>
+          <path class="steam s3" d="M165 70 c-10-8-10-18-3-19 c4-1 6 2 7 4 c1-2 3-5 7-4 c7 1 7 11-11 19z"/>
+        </g>
+        <ellipse cx="130" cy="196" rx="96" ry="10" fill="#c2185b" opacity=".15"/>
+        <rect x="38" y="112" width="26" height="14" rx="7" fill="#c2185b"/>
+        <rect x="196" y="112" width="26" height="14" rx="7" fill="#c2185b"/>
+        <path d="M58 100 h144 v52 a44 40 0 0 1 -44 40 h-56 a44 40 0 0 1 -44 -40z" fill="#ff6b9d"/>
+        <path d="M58 100 h144 v14 h-144z" fill="#ff8fb3"/>
+        <path d="M70 120 v30 a30 28 0 0 0 20 26" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".45"/>
+        <rect x="50" y="88" width="160" height="16" rx="8" fill="#c2185b"/>
+        <rect x="118" y="76" width="24" height="14" rx="6" fill="#ffd166"/>
+        <circle cx="108" cy="140" r="6" fill="#4a1630"/><circle cx="152" cy="140" r="6" fill="#4a1630"/>
+        <circle cx="110" cy="138" r="2" fill="#fff"/><circle cx="154" cy="138" r="2" fill="#fff"/>
+        <ellipse cx="94" cy="156" rx="10" ry="6" fill="#ffd166" opacity=".8"/><ellipse cx="166" cy="156" rx="10" ry="6" fill="#ffd166" opacity=".8"/>
+        <path d="M120 154 q10 10 20 0" stroke="#4a1630" stroke-width="4" stroke-linecap="round" fill="none"/>
+      </svg>
+      <h1><span class="name">Nilakshi,</span><br>will you go on date #2 with me?</h1>
+      <p class="note">Date #1 ✓ done (still smiling about it)<br>You cook or we go out — either way, I'm calling it a date 😌</p>
+      <div class="btns">
+        <button class="yes" id="yesBtn">Yes 💖</button>
+        <button class="no" id="noBtn">No</button>
+      </div>
+      <p class="hint" id="hint"></p>
+    </div>
+  </section>
+
+  <!-- 3. Cook or out -->
+  <section class="screen" id="s-choose">
+    <div class="card">
+      <h1>YAYYY 🥹💖</h1>
+      <p>Okay okay, now the important part. How are we doing it?</p>
+      <div class="choices">
+        <button class="choice" data-plan="cook"><span class="em">🍳</span><b>Cook &amp; eat at your place</b><small>Your idea, and honestly a great one. I'm just saying yes to it.</small></button>
+        <button class="choice" data-plan="out"><span class="em">🌆</span><b>Go out somewhere</b><small>I'll plan it, I'll pick you up. You just show up looking cute.</small></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Celebration -->
+  <section class="screen" id="s-done">
+    <div class="card">
+      <svg class="couple" viewBox="0 0 280 250" role="img" aria-label="A Sikh guy in a pagg and a girl looking at each other, holding hands">
+        <defs>
+          <pattern id="fl" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.4" fill="#fff" opacity=".7"/><circle cx="9" cy="9" r="1" fill="#ffd166"/></pattern>
+        </defs>
+        <!-- hearts -->
+        <path class="beat" d="M140 48 C 124 37, 124 21, 133 19 C 137 18, 139 21, 140 24 C 141 21, 143 18, 147 19 C 156 21, 156 37, 140 48 Z" fill="#ff4f8b"/>
+        <path d="M118 30 c-4-3-4-7-1-7 c1 0 2 1 2 2 c0-1 1-2 2-2 c3 0 3 4-3 7z" fill="#ff8fb3"/>
+        <path d="M163 26 c-4-3-4-7-1-7 c1 0 2 1 2 2 c0-1 1-2 2-2 c3 0 3 4-3 7z" fill="#ff8fb3"/>
+        <ellipse cx="140" cy="240" rx="108" ry="8" fill="#c2185b" opacity=".13"/>
+
+        <!-- ===== HER (facing left) ===== -->
+        <!-- long open hair behind -->
+        <path d="M156 112 C 150 82, 206 76, 208 108 L 214 182 C 206 190, 194 186, 190 176 L 184 134 Z" fill="#2b1a14"/>
+        <!-- kurti -->
+        <path d="M156 150 C 158 144, 198 144, 200 150 L 212 224 H 144 Z" fill="#ff6b9d"/>
+        <path d="M156 150 C 158 144, 198 144, 200 150 L 212 224 H 144 Z" fill="url(#fl)"/>
+        <path d="M145 220 H 211" stroke="#ffd166" stroke-width="5" stroke-linecap="round"/>
+        <rect x="160" y="224" width="12" height="8" fill="#fff"/><rect x="184" y="224" width="12" height="8" fill="#fff"/>
+        <ellipse cx="164" cy="234" rx="9" ry="4.5" fill="#d9b86c"/><ellipse cx="192" cy="234" rx="9" ry="4.5" fill="#d9b86c"/>
+        <!-- dupatta on shoulders -->
+        <path d="M160 152 C 168 162, 188 162, 196 152" stroke="#ffd166" stroke-width="7" fill="none" stroke-linecap="round"/>
+        <path d="M159 152 L 152 206 L 163 208 L 167 158 Z" fill="#ffd166"/>
+        <path d="M197 152 L 205 210 L 194 212 L 189 158 Z" fill="#ffd166"/>
+        <!-- her arms -->
+        <path d="M198 158 L 206 196" stroke="#ff6b9d" stroke-width="12" stroke-linecap="round"/>
+        <circle cx="207" cy="201" r="6.5" fill="#e8b48a"/>
+        <path d="M162 158 L 149 180" stroke="#ff6b9d" stroke-width="12" stroke-linecap="round"/>
+        <path d="M151 177 l6 3 M153 173 l6 3" stroke="#d9b86c" stroke-width="2" stroke-linecap="round"/>
+        <!-- her head -->
+        <g transform="rotate(-9 178 114)">
+          <rect x="172" y="132" width="12" height="16" rx="5" fill="#d9a074"/>
+          <circle cx="178" cy="114" r="28" fill="#e8b48a"/>
+          <circle cx="151" cy="120" r="5" fill="#e8b48a"/>
+          <path d="M150 106 C 154 82, 198 78, 207 102 L 207 124 C 198 114, 190 102, 172 99 C 162 98, 155 101, 150 106 Z" fill="#2b1a14"/>
+          <circle cx="196" cy="118" r="5" fill="#e0a77e"/>
+          <path d="M196 123 v4" stroke="#d9b86c" stroke-width="2"/><circle cx="196" cy="129" r="2.6" fill="#d9b86c"/>
+          <g transform="translate(200 92)"><circle r="4" fill="#ff4f8b"/><circle cx="-5" cy="2" r="3" fill="#ff8fb3"/><circle cx="4" cy="4" r="3" fill="#ff8fb3"/><circle r="1.6" fill="#ffd166"/></g>
+          <path d="M158 112 q5 -6 10 0" stroke="#4a1630" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M157 109 l-3 -3" stroke="#4a1630" stroke-width="2" stroke-linecap="round"/>
+          <ellipse cx="166" cy="123" rx="6" ry="4" fill="#ff8fb3" opacity=".8"/>
+          <path d="M152 128 q5 5 10 0" stroke="#4a1630" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+        </g>
+
+        <!-- ===== HIM (facing right) ===== -->
+        <!-- shirt -->
+        <path d="M70 142 C 72 136, 126 136, 128 142 L 136 214 H 64 Z" fill="#8ecae6"/>
+        <path d="M100 144 V 212" stroke="#6fb3d6" stroke-width="2"/>
+        <g fill="#fff"><circle cx="100" cy="160" r="1.8"/><circle cx="100" cy="176" r="1.8"/><circle cx="100" cy="192" r="1.8"/></g>
+        <path d="M88 139 L 100 152 L 112 139" fill="#bfe3f3" stroke="#6fb3d6" stroke-width="1.5"/>
+        <rect x="68" y="212" width="64" height="20" rx="3" fill="#3b4a6b"/>
+        <path d="M100 214 V 232" stroke="#2c3854" stroke-width="2"/>
+        <ellipse cx="82" cy="235" rx="12" ry="5" fill="#4a1630"/><ellipse cx="116" cy="235" rx="12" ry="5" fill="#4a1630"/>
+        <!-- his arms (rolled sleeves) -->
+        <path d="M74 152 L 66 188" stroke="#8ecae6" stroke-width="13" stroke-linecap="round"/>
+        <path d="M66 186 L 64 196" stroke="#d9a074" stroke-width="10" stroke-linecap="round"/>
+        <circle cx="64" cy="199" r="7" fill="#d9a074"/>
+        <path d="M124 152 L 134 168" stroke="#8ecae6" stroke-width="13" stroke-linecap="round"/>
+        <path d="M134 168 L 141 178" stroke="#d9a074" stroke-width="10" stroke-linecap="round"/>
+        <ellipse cx="138" cy="174" rx="7" ry="3" fill="none" stroke="#a7b1c2" stroke-width="3" transform="rotate(-55 138 174)"/>
+        <!-- joined hands -->
+        <circle cx="143" cy="182" r="7.5" fill="#d9a074"/>
+        <circle cx="148" cy="183" r="6.5" fill="#e8b48a"/>
+        <!-- his head -->
+        <g transform="rotate(9 100 106)">
+          <rect x="94" y="124" width="12" height="16" rx="5" fill="#c99064"/>
+          <circle cx="100" cy="106" r="30" fill="#d9a074"/>
+          <circle cx="129" cy="112" r="6" fill="#d9a074"/>
+          <!-- beard -->
+          <path d="M80 104 C 74 128, 88 147, 110 145 C 122 143, 131 133, 129 122 C 123 125, 117 125, 113 121 C 104 124, 92 118, 86 106 Z" fill="#2b1a14"/>
+          <path d="M112 120 C 118 115, 126 116, 131 121 C 125 125, 118 125, 112 120 Z" fill="#1c100b"/>
+          <path d="M114 131 q6 4 11 -1" stroke="#e8b48a" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+          <path d="M107 103 q5 -6 10 0" stroke="#2b1a14" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M107 95 q6 -2 11 0" stroke="#2b1a14" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+          <ellipse cx="110" cy="111" rx="5" ry="3.5" fill="#ff8fb3" opacity=".7"/>
+          <!-- pagg: tall front, angled pleats -->
+          <path d="M127 91 C 134 78, 136 62, 129 46 C 112 42, 82 48, 68 62 C 59 73, 60 93, 67 109 C 84 99, 106 93, 127 91 Z" fill="#c2185b"/>
+          <path d="M69 102 C 88 90, 108 76, 129 62" stroke="#8e1047" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M66 88 C 86 76, 106 62, 126 50" stroke="#8e1047" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M75 104 C 94 94, 112 84, 131 72" stroke="#8e1047" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M68 76 C 86 64, 104 54, 120 47" stroke="#e85a8f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M70 95 C 89 83, 108 70, 128 56" stroke="#e85a8f" stroke-width="2" fill="none" stroke-linecap="round" opacity=".8"/>
+          <path d="M127 91 C 134 78, 136 62, 129 46" stroke="#8e1047" stroke-width="2" fill="none"/>
+          <path d="M126 91 C 112 92, 96 96, 82 102" stroke="#8e1047" stroke-width="2" fill="none" opacity=".6"/>
+        </g>
+      </svg>
+      <div class="couple-names hand">Navdeep <span>&amp;</span> Nilakshi</div>
+      <h1>Congrats <span class="name">Nilakshi!</span> 🎉</h1>
+      <p style="font-size:19px;color:var(--ink)">You just got the perfect man you've always imagined 😌</p>
+      <p class="note" style="margin-bottom:0">Best decision ever. Seriously.<br>Screenshot this, it's historic 📸</p>
+      <div class="ticket">
+        <h3>Date #2 <span>Confirmed ✓</span></h3>
+        <div id="ticketRows"></div>
+      </div>
+      <div class="sorry">P.S. 🥺 I'm sorry if anything I ever said made you feel disappointed or hurt. That was never what I wanted, and I'll always respect your space 🤍</div>
+      <a class="btn wa" id="waBtn" href="#" target="_blank" rel="noopener">Tell Navdeep 💬</a>
+      <div><button class="link" id="againBtn">Change the plan</button></div>
+    </div>
+  </section>
+</main>
+
+<footer>made with love by <span class="hand">Navdeep</span>, only for <span class="hand">Nilakshi</span> 💗</footer>
+
+<script>
+{
+// ✏️ Put your WhatsApp number here: 91 + your 10-digit number, no + or spaces (e.g. "919876543210").
+// Leave it empty and WhatsApp will ask her who to send it to.
+const PHONE = "";
+
+const NO_WORDS = [
+  "Please? 🥺","Think again 🤔","You won't get anyone like me 😌","Pretty please 🍓","Are you sure? 😢",
+  "Wrong button, Nilakshi 🙈","I'll do the dishes 🧽","I'll chop the onions & cry for you 🧅","I'll bring dessert 🍰","My heart just cracked 💔",
+  "Even this button wants a yes 😤","Pleaseee 🥹","Don't do this to me 😭","One more chance? 🙏","I'll be your sous-chef 👨‍🍳",
+  "Think about the food 🍝","I already picked my outfit 👔","Have mercy 🥺","You're breaking my heart 💔","That's not the answer 😤",
+  "Try the pink one 👉","I'll let you pick the movie 🎬","I'll carry all the groceries 🛒","Say yes for the vibes ✨","No is not on the menu 📋",
+  "Error 404: 'No' not found 🤖","Your future self says yes 🔮","Just one more date? ☝️","I'll make you laugh, promise 😄","I'm cute though 😇",
+  "Look at this face 🥺👉👈","Okay but think again 💭","I'll share my fries 🍟","This button is broken 🔧","The stars said yes ⭐",
+  "Plot twist: you say yes 🌀","I'll even wash the pan 🍳","Puppy eyes activated 🐶","Not taking no for an answer 😌","My heart is on the line 💘",
+  "Don't make me beg… okay I'm begging 🧎","Pleeeeease 🍬","I'll bring flowers 🌷","You know you want to 😏","I'll let you win every argument 🏳️",
+  "Last chance… jk, click yes 😜","Even the cat says yes 🐱","I'll clean up after 🧹","Fingers crossed it's a yes 🤞","*sad chef noises* 🥲"
+];
+
+const HINTS = ["","Hmm, interesting choice 🤨","The pink button is getting bigger for a reason 👀","Attempts to break my heart: ","I can do this all day 😌"];
+
+const PLANS = {
+  cook: {
+    rows: [["Plan","Cooking at yours 🍳"],["Head chef","Nilakshi 👩‍🍳"],["Sous-chef & taste tester","Navdeep"],["Dishes","Also Navdeep 🧽"],["Dessert","On me 🍰"]],
+    msg: "Hey Navdeep! I clicked YES 💖 Date #2 = cooking at my place 🍳 Don't forget the dessert 😌"
+  },
+  out: {
+    rows: [["Plan","Going out 🌆"],["Planner & driver","Navdeep 🚗"],["Your only job","Show up 💅"],["Dress code","You'll look amazing anyway"],["Bill","Don't even think about it 😌"]],
+    msg: "Hey Navdeep! I clicked YES 💖 Date #2 = going out 🌆 Plan something good and pick me up 😌"
+  }
+};
+
+const $ = id => document.getElementById(id);
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+let noCount = 0, pool = [];
+
+const go = id => {
+  document.querySelectorAll(".screen").forEach(s => s.classList.toggle("on", s.id === id));
+  scrollTo({top:0, behavior: reduce ? "auto" : "smooth"});
+};
+
+const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const nextWord = () => { if (!pool.length) pool = shuffle(NO_WORDS.slice()); return pool.pop(); };
+
+// floating background hearts
+const bg = $("bgHearts");
+if (!reduce) {
+  bg.innerHTML = Array.from({length: 16}, () => {
+    const s = 12 + Math.random() * 22;
+    return `<span style="left:${Math.random()*100}%;font-size:${s}px;opacity:${.15+Math.random()*.3};animation-duration:${9+Math.random()*10}s;animation-delay:-${Math.random()*15}s">♥</span>`;
+  }).join("");
+}
+
+// confetti
+const cv = $("confetti"), ctx = cv.getContext("2d");
+let parts = [], running = false;
+const size = () => { cv.width = innerWidth * devicePixelRatio; cv.height = innerHeight * devicePixelRatio; ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0); };
+size(); addEventListener("resize", size);
+const COLORS = ["#ff4f8b","#c2185b","#ffd166","#ff8fb3","#ffffff","#7ad3b5"];
+function burst(n) {
+  if (reduce) n = Math.min(n, 30);
+  for (let i = 0; i < n; i++) parts.push({
+    x: innerWidth / 2 + (Math.random() - .5) * 120, y: innerHeight * .45,
+    vx: (Math.random() - .5) * 14, vy: -Math.random() * 14 - 4,
+    r: Math.random() * 6.28, vr: (Math.random() - .5) * .3,
+    s: 10 + Math.random() * 14, c: COLORS[i % COLORS.length], heart: Math.random() < .55, life: 0
+  });
+  if (!running) { running = true; requestAnimationFrame(tick); }
+}
+function tick() {
+  ctx.clearRect(0, 0, innerWidth, innerHeight);
+  parts = parts.filter(p => p.y < innerHeight + 40 && p.life < 400);
+  for (const p of parts) {
+    p.vy += .32; p.vx *= .99; p.x += p.vx; p.y += p.vy; p.r += p.vr; p.life++;
+    ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.r); ctx.fillStyle = p.c;
+    if (p.heart) { ctx.font = `${p.s}px sans-serif`; ctx.textAlign = "center"; ctx.fillText("♥", 0, 0); }
+    else ctx.fillRect(-p.s/4, -p.s/2, p.s/2, p.s);
+    ctx.restore();
+  }
+  if (parts.length) requestAnimationFrame(tick); else { running = false; ctx.clearRect(0, 0, innerWidth, innerHeight); }
+}
+
+// buttons
+$("openBtn").addEventListener("click", () => { go("s-ask"); burst(40); });
+
+$("noBtn").addEventListener("click", () => {
+  noCount++;
+  const no = $("noBtn");
+  no.textContent = nextWord();
+  no.classList.remove("wiggle"); void no.offsetWidth; no.classList.add("wiggle");
+  const y = $("yesBtn");
+  y.style.fontSize = Math.min(18 + noCount * 2.4, 46) + "px";
+  y.style.padding = `${Math.min(14 + noCount * 1.4, 30)}px ${Math.min(28 + noCount * 2.5, 60)}px`;
+  const h = noCount < 3 ? HINTS[noCount] : noCount < 12 ? HINTS[3] + noCount + " 🙄" : HINTS[4] + " (no. " + noCount + ")";
+  $("hint").textContent = h;
+});
+
+$("yesBtn").addEventListener("click", () => { go("s-choose"); burst(90); });
+
+document.querySelectorAll(".choice").forEach(b => b.addEventListener("click", () => {
+  const plan = PLANS[b.dataset.plan];
+  $("ticketRows").innerHTML = plan.rows.map(([k, v]) => `<div class="row"><span>${k}</span><span>${v}</span></div>`).join("");
+  let msg = plan.msg;
+  if (noCount) msg += ` (P.S. I only pressed No ${noCount} time${noCount > 1 ? "s" : ""} 🙈)`;
+  $("waBtn").href = `https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`;
+  go("s-done");
+  burst(160);
+  setTimeout(() => burst(100), 700);
+}));
+
+$("againBtn").addEventListener("click", () => go("s-choose"));
+}
+</script>
+</body>
+</html>
